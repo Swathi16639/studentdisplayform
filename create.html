@@ -1,0 +1,8 @@
+<h1 style="color:green;font-family: Times New Roman;font-style: italic;">Display Studentform</h1>
+<H3 style="color:green;font-family: Times New Roman;font-style: italic;">please fill up the details</H3>
+<body style="background-color: lightblue;"></body>
+<form method="POST"class="POST-form"enctype="multipart/form-data">
+	{% csrf_token %}
+<table>{{form.as_table}}</table>
+<button type='submit'>submit</button>
+</form>
